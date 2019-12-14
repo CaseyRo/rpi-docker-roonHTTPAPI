@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+    roonHTTPapi:
+      image: keesromkes/roonhttpapi
+      restart: always
+      network_mode: host
+      ports:
+        - "3001"
+      environment:
+        - server=${server}
+        - port=${port}
