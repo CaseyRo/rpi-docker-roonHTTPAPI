@@ -51,4 +51,4 @@ localhost:3001/roonAPI/getInternetRadios?toSearch=Kink&zone=Marantz
 
 ### Useful links:
 1. [Roon extension HTTP API](https://github.com/Keesromkes/roon-extension-http-api)
-2. [Roon forum post where it all started[(https://github.com/Keesromkes/roon-extension-http-api)
+2. [Roon forum post where it all started](https://github.com/Keesromkes/roon-extension-http-api)
