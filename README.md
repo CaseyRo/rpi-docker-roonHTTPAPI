@@ -1,4 +1,5 @@
-# roon-httpAPI-docker-rpi
+# rpi-docker-roonHTTPAPI
+
 Raspberry pi docker container for the roon http api, based on https://github.com/Keesromkes/roon-extension-http-api
 
 _Please note, it's my first node project and also the docker container is not a very experienced one -- but I've tried and succeeded on my environment. Feel free to add pull requests to optimise._
@@ -9,7 +10,7 @@ _Please note, it's my first node project and also the docker container is not a 
 ![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/keesromkes/roonhttpapi)
 
 * [This project on Docker](https://cloud.docker.com/repository/docker/keesromkes/roonhttpapi)
-* [This project on Github](https://github.com/Keesromkes/roon-httpAPI-docker-rpi)
+* [This project on Github](https://github.com/Keesromkes/rpi-docker-roonHTTPAPI)
 
 ## Why use environment variables to set server and port
 Since I'm not sure what ports to open to allow automatic discovery, you'll need to set the environment variables in docker-compose to match your environment.
