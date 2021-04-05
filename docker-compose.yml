@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  roonHTTPapi:
+    image: 127.0.0.1:5000/roonhttpapi
+    ports:
+      - "3001:3001"
+    environment:
+      - server=192.168.86.202
+      - port=9100
+    deploy:
+      mode: replicated
+      replicas: 2
+      placement:
+        constraints: [node.role != manager]
+        max_replicas_per_node: 1

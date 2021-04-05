@@ -1,9 +1,9 @@
-FROM node:alpine
+FROM lsiobase/alpine:arm32v7-3.12
 
 WORKDIR /app
 
 RUN apk update && apk upgrade && \
-  apk add --no-cache bash git openssh
+  apk add --no-cache bash git openssh nodejs npm
 
 RUN apk --no-cache add tar curl && \
   curl -L https://github.com/Keesromkes/roon-extension-http-api/archive/master.tar.gz | tar xz --strip-components=1 -C /app && \
